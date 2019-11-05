@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FiestasDataSet3" targetNamespace="http://tempuri.org/FiestasDataSet3.xsd" xmlns:mstns="http://tempuri.org/FiestasDataSet3.xsd" xmlns="http://tempuri.org/FiestasDataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FiestasConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FiestasConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Eventos.Properties.Settings.GlobalReference.Default.FiestasConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Inventaria de MesasTableAdapter" GeneratorDataComponentClassName="Inventaria_de_MesasTableAdapter" Name="Inventaria de Mesas" UserDataComponentName="Inventaria de MesasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FiestasConnectionString (Settings)" DbObjectName="dbo.[Inventaria de Mesas]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Forma FROM dbo.[Inventaria de Mesas]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Forma" DataSetColumn="Forma" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FiestasDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FiestasDataSet3" msprop:Generator_UserDSName="FiestasDataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Inventaria_x0020_de_x0020_Mesas" msprop:Generator_TableClassName="Inventaria_de_MesasDataTable" msprop:Generator_TableVarName="tableInventaria_de_Mesas" msprop:Generator_TablePropName="Inventaria_de_Mesas" msprop:Generator_RowDeletingName="Inventaria_de_MesasRowDeleting" msprop:Generator_RowChangingName="Inventaria_de_MesasRowChanging" msprop:Generator_RowEvHandlerName="Inventaria_de_MesasRowChangeEventHandler" msprop:Generator_RowDeletedName="Inventaria_de_MesasRowDeleted" msprop:Generator_UserTableName="Inventaria de Mesas" msprop:Generator_RowChangedName="Inventaria_de_MesasRowChanged" msprop:Generator_RowEvArgName="Inventaria_de_MesasRowChangeEvent" msprop:Generator_RowClassName="Inventaria_de_MesasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Forma" msprop:Generator_ColumnVarNameInTable="columnForma" msprop:Generator_ColumnPropNameInRow="Forma" msprop:Generator_ColumnPropNameInTable="FormaColumn" msprop:Generator_UserColumnName="Forma" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1073741823" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
